@@ -17,16 +17,18 @@ OGPとは「Open Graph Protcol」の略で、FacebookやTwitterなどのSNSで�
 用語の命名は制作者にとって最も基本的で、重要なものの1つ。コードをより読みやすく、予測可能にするので慎重に定義すべし。
 
 - テキストの先頭にアイコンを設置するアイデア。
-  hoge::before {
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    margin: -3px 10px 0 0;
-    background: url(fuga);
-    background-size: contain;
-    vertical-align: middle;
-  }
+<pre>
+hoge::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: -3px 10px 0 0;
+  background: url(fuga);
+  background-size: contain;
+  vertical-align: middle;
+}
+</pre>
   
 - めっちゃ便利なセレクタ指定方法  
 class^="hoge" 　hogeで始まるクラスを指定  
