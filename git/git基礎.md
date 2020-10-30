@@ -1,5 +1,5 @@
 ## エイリアス備忘録
-### git config --global alias.ho hoge
+### `git config --global alias.ho hoge`
 - ci commit  
 - co checkout  
 - br branch  
@@ -20,8 +20,23 @@ init（worktreeへ）→add（stagingへ）→commit（ローカルリポジへ�
 - プッシュする前に'git push -u origin master'をやっておくと
 次回から'git push'だけでよくなる。  
 
-- 'git pull'　fetchとmergeを一編にできて便利、  
+- **git pull**  
+fetchとmergeを一編にできて便利、  
 どのブランチに居てるか把握してからしないとファイルがめちゃくちゃになる・・。
+
+- rebaseとmergeの違いと使い分け  
+  ・親コミットが分岐しているかしていないか（rebaseは分岐なし）
+  ・履歴をきれいにするか残すか（rebaseは履歴ごと消える）
+  
+  - **merge**
+    - +: コンフリクト解決が簡単
+    - -: マージコミットがあると履歴が複雑化する
+    - 用途：pushした後、コンフリクトしそうな時。
+
+  - **rebase:**
+    - +: 履歴がきれいに保てる
+    - -: コンフリクト解消が大変。（コミットそれぞれに解消が必要）
+    - 用途：pushしてないローカルの変更。
 
 - [ファイルの変更を取り消す]
 git checkout --<ファイル名>  
@@ -34,3 +49,8 @@ git checkout --.
 git diff / git diff <ファイル名>  
 #git addした後  
 git diff --staged  
+
+## 要注意
+githubにプッシュしたコミットをrebaseするのはNG。  
+理由:githubとローカルのデータが矛盾が生じて、githaub上のデータが優先されてしまいpushできなくなるから。  
+git push -f (force) は絶対NG。  
