@@ -10,11 +10,19 @@
 リモートリポジ 以外ローカル環境なのでミスれる範囲。  
 - init（worktreeへ）→add（stagingへ）→commit（ローカルリポジへ）→push（リモートリポジへ）  
 
-### 頻出コマンド
-- git status →　addしたか確認  
-- git diff   →　変更を見る  
-- git log    →　commitメッセージ確認  
-- git log -p →　変更内容確認　Qで終了できる  
+### コマンド解説
+- git status →　addしたか確認。  
+- git log    →　commitメッセージ確認。  
+- git log -p →　変更内容確認　Qで終了できる。  
+- git ci -v  →　変更内容確認。  
+- git log  
+  - git log --oneline →変更履歴を1行で表示。  
+  - git log -p <ファイル名> →ファイルの変更差分を表示。  
+  - git log -n <コミット数> →コミット数を制限して表示。  
+ - git rm <ファイル名> →ファイルごと削除。
+ - git rm --cached <残したいファイル名> →残したいファイル以外削除。
+ - git rm -r <ディレクトリ名> →ディレクトリごと削除。
+ - git mv <旧ファイル><新ファイル>
 
 ### 基礎テクニック　　
 - プッシュする前に'git push -u origin master'をやっておくと
