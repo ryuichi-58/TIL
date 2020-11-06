@@ -62,3 +62,12 @@ git diff --staged
 - githubにプッシュしたコミットをrebaseするのはNG。  
 理由:githubとローカルのデータが矛盾が生じて、githaub上のデータが優先されてしまいpushできなくなるから。  
 git push -f (force) は絶対NG。  
+  
+### ワークツリーの一文字リスト  
+: A	added	新規追加
+: M	modified	変更あり
+: U	untracked	gitが未追跡(新規作成、add前)
+: D	deleted	削除済み
+: C	conflict	コンフリクト発生中
+: R	renamed	ファイル名変更済み
+: S	submodule	サブモジュール
