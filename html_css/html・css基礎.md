@@ -54,6 +54,7 @@ Bを構成する部品的要素。input, submit, bady, bth
 : 6分割 width: 16.6667%  
 
 - 縦方向中央寄せ
+<pre>
 ".base{
 	position: relative;//親要素に必須
 }
@@ -62,3 +63,4 @@ Bを構成する部品的要素。input, submit, bady, bth
 	top: 50%;
 	transform: translateY(-50%);
 }
+</pre>
