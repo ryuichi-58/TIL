@@ -44,4 +44,21 @@ header, menu, search, footerなどのパーツで構成されている。
 - E /  Element  
 Bを構成する部品的要素。input, submit, bady, bth  
 - M / Modifier  
-同じBlockであっても、カレント状態であったり、通常の状態とエラー状態などで異なる装飾を設定する。current, fixed
+同じBlockであっても、カレント状態であったり、通常の状態とエラー状態などで異なる装飾を設定する。current, fixed  
+
+### width均等割り早見表
+: 2分割 width: 50%  
+: 3分割 width: 33.3333%  
+: 4分割 width: 25%  
+: 5分割 width: 20%  
+: 6分割 width: 16.6667%  
+
+- 縦方向中央寄せ
+".base{
+	position: relative;//親要素に必須
+}
+.child{//実際に真ん中にもってきたい要素に指定
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
