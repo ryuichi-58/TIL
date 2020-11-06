@@ -55,7 +55,7 @@ Bを構成する部品的要素。input, submit, bady, bth
 
 - 縦方向中央寄せ
 <pre>
-".base{
+.base{
 	position: relative;//親要素に必須
 }
 .child{//実際に真ん中にもってきたい要素に指定
