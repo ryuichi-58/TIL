@@ -1,0 +1,42 @@
+## ヒアドキュメントとは  
+長い文字列を変数に代入したり、出力する場合に使用し、  
+PHPスクリプトからHTMLを出力する場合などに便利な手法。  
+  
+<pre>
+<?php
+
+$purpose = "Webプログラミング";
+
+echo "PHPとは、HTMLへの埋め込み型プログラミング言語です。<br />\n";
+echo "正式名称は「PHP: Hypertext Preprocessor」です。<br />\n";
+echo "PHPは{$purpose}に利用されます。<br />\n";
+echo "<a href=\"detail.php\">詳細を読む<a>\n";
+
+?>
+</pre>
+  
+例えば、上記のような長い文章でも  
+下記のようにヒアドキュメントを使えば
+<?php
+
+$purpose = "Webプログラミング";
+
+echo <<< EOM
+PHPとは、HTMLへの埋め込み型プログラミング言語です。<br />
+正式名称は「PHP: Hypertext Preprocessor」です。<br />
+PHPは{$purpose}に利用されます。<br />
+<a href="detail.php">詳細を読む<a>
+EOM;
+
+?>
+</pre>  
+  
+これでも全く同じ内容が出力される。  
+\n が無くても改行が反映され、ダブルクォートやシングルクォートのエスケープも考える必要がない。  
+<<< がヒアドキュメントの始まりで、EMO;まで出力される。  
+
+### EMOとは??    
+EMO（End Of Message）の略称で、  
+EOD（End Of Document）や EOF（End Of File）という文字がよく使われる。  
+<<< EMO と書かれることが多いが、正直なんでも良い  
+(でも意味は大切やし、普遍的な方を使用する方が混乱がない)。
