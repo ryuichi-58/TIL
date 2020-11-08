@@ -63,4 +63,14 @@ Bを構成する部品的要素。input, submit, bady, bth
 	top: 50%;
 	transform: translateY(-50%);
 }
-</pre>
+</pre>  
+
+### headerを固定した時に生じる要素の重なりを解消  
+<pre>
+header {
+ z-index: 10;  
+{ 
+</pre>  
+
+z-indexの数値は他に設定していなければ  
+1以上で最上位にヘッダーを配置できる。
