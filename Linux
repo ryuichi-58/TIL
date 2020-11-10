@@ -11,3 +11,11 @@ LinuxはUnixを真似てリーナス・トーバルズがオープンソース�
 - Microsoft　Officeが動作しない。
 - 日本語に対応されていないことが多い
 
+### mv　移動先がファイルとディレクトリで挙動が違う  
+mv file file1　ファイル名変更  
+mv file dir/ 　ファイル移動  
+  
+### コマンドを調べる  
+cat --help catの使用方法を調べられる。  
+man cat    catのオンラインマニュアルが見られる。  
+man -k cat catに関する情報を網羅してくれる。  
