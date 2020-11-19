@@ -30,3 +30,16 @@ echo 'データベースに接続できました' . PHP_EOL;
 mysqli_close($link);
 echo 'データベースに切断しました' . PHP_EOL;
 ```
+### 横並び一列ずつテーブルを表示させる方法
+コードの末尾を「；」で終わらずに「\G」で終わらせる。
+```
+//コード  
+SELECT * FROM companies\G   
+
+//実行結果  
+                id: 1
+              name: mercari inc
+establishment_date: 2013-02-01
+           founder: Shintaro Yamada
+        created_at: 2020-11-19 02:48:02
+```
