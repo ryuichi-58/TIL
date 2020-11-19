@@ -1,6 +1,6 @@
 ### TABLEを初期化したい。（既にあるテーブルを削除して新規作成する）
 ```
-DROP TABLE IF EXISTS companies; //<font color="Red">IF　EXISTS記載で同名のテーブルを削除できる</font>
+DROP TABLE IF EXISTS companies; <font color="Red">// IF　EXISTS記載で同名のテーブルを削除できる</font>
 
 CREATE TABLE companies (
     id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
