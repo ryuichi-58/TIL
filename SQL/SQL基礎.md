@@ -1,3 +1,11 @@
+### dockerでSQLに接続する方法
+-h :host名
+-u :user名
+-D :datebase名（大文字なので注意！）
+-p :
+
+docker-compose exec app mysql -h db -u book_log -D book_log -p
+
 ### TABLEを初期化したい。（既にあるテーブルを削除して新規作成する）
 ```
 DROP TABLE IF EXISTS companies; // IF　EXISTS記載で同名のテーブルを削除できる
