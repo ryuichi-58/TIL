@@ -1,3 +1,5 @@
+docker-compose.ymlにはコンテナの情報が記載されている
+
 ### 新コマンド
 「コマンド」「サブコマンド」を使って  
 「何を」「どうするか」を表現できるようになった。  
@@ -23,3 +25,9 @@ exec	  :サービスに対してコマンドを実行
 logs	  :サービスのログを出力
 stop	  :サービスを停止させる
 kill    :サービスをkillする
+
+docker-compose ps   コンテナ一覧表示
+docker-compose up   プロジェクト内のコンテナすべて起動
+docker-compose exec #{container} ${command}  コンテナに入る
+
+
