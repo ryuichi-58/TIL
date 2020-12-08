@@ -54,5 +54,5 @@ establishment_date: 2013-02-01
 ### OR条件使用時の注意
 ```OR```と```AND```を組み合わせる場合はORを（）で囲む必要がある。
 例えば・・  
-```SELECT * FORM my_items WHERE id=1 OR id=3 AND price<150 AND keyword LIKE '%甘い%'```　
-これでは必ずid=1がヒットしてしまうので、```(id=1 OR id=3)```と囲むと正常に動作する。
+```SELECT * FORM my_items WHERE id=1 OR id=3 AND price<150 AND keyword LIKE '%甘い%'```  
+これでは必ずid=1がヒットしてしまうので、 **(id=1 OR id=3)** と囲むと正常に動作する。
