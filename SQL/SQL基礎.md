@@ -56,3 +56,12 @@ establishment_date: 2013-02-01
 例えば・・  
 ```SELECT * FORM my_items WHERE id=1 OR id=3 AND price<150 AND keyword LIKE '%甘い%'```  
 これでは必ずid=1がヒットしてしまうので、 **(id=1 OR id=3)** と囲むと正常に動作する。
+
+### WHERE句でリレーションを張る際の注意
+同じカラム名がなくても、  
+```AND makers.id=my_items.maker_id;```
+と毎回記述する癖をつけた方が良い。  
+
+### テーブル名のショートカット
+```SELECT * FROM makers m, my_items i WHERE i . id = 1 AND m . id = i . maker_id;```
+```makers``` を　```m```　、```my_items``` を　```i```　など、自由に決めて短縮できる。
