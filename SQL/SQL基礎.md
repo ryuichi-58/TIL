@@ -63,5 +63,7 @@ establishment_date: 2013-02-01
 と毎回記述する癖をつけた方が良い。  
 
 ### テーブル名のショートカット
-```SELECT * FROM makers m, my_items i WHERE i . id = 1 AND m . id = i . maker_id;```
-```makers``` を　```m```　、```my_items``` を　```i```　など、自由に決めて短縮できる。
+```SELECT * FROM makers m, my_items i WHERE i . id = 1 AND m . id = i . maker_id;```  
+・```makers```   →　```m```  
+・```my_items``` →　```i```  
+など、自由に決めて短縮することができる。
