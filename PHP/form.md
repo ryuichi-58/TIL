@@ -1,3 +1,10 @@
+### ファイルアップロードの一時保管場所を調べる
+```
+<?php
+print ini_get('upload_tmp_dir');
+?>
+```
+  
 ### ファイルアップロードの際のform要素のポイント
 #### enctype ＝ ”multipert/form-data”
 enctype「encode type」の略称。  
