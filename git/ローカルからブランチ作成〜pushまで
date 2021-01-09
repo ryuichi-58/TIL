@@ -1,0 +1,29 @@
+1. ブランチを作成したいディレクトリに移動する  
+  git cd 〇〇  
+    
+2. 自分がどのブランチにいるか確認してmainに移動する  
+  git branch (-aをつけるとリモート追跡ブランチも出力できる)
+  git checkout main <- mainにいない時だけ実行  
+    
+3. 変更等ないか確認  
+  git status  
+  ※変更があれば  
+  git add 〇〇 ->git commit -v ->git push -u origin mainを実行  
+    
+4. mainが最新の状態か確認  
+　　git pull origin mainを実行して更新されなければOK
+  
+5. ここでようやく新規ブランチを作成し、ブランチを新規ブランチに切り替える  
+   git checkout -d 〇〇（新規ブランチを命名する） 
+   
+6. ターミナルからエディタに移動し、pushしたいファイルに追記。  
+   ファイル内容を変更しpushできるような状態にする
+　　git add index.html <- index.htmlに追記したと想定 
+    
+7. 変更をコミットする
+   git commit -v (エディタが開くと思うので変更内容をコメントとして記載)
+   ※vscodeの場合、ここでエディターに遷移しなければ⌘＋shift＋pでshell commandを検索してインストールする  
+     
+8. 変更をプッシュする(pushすることでgithub上では新規ブランチが作成されている)
+　　git push -u origin 〇〇（〇〇は5で命名したブランチ名を入力）
+    
