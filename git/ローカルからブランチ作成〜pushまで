@@ -11,10 +11,10 @@
   　git add 〇〇 ->git commit -v ->git push -u origin mainを実行  
     
 4. mainが最新の状態か確認  
-　　git pull origin mainを実行(実行して更新されなければ最新の状態)
+　　git pull origin mainを実行(実行して更新されなければ今の状態が最新の状態)
   
-5. 新規ブランチを作成し、ブランチを新規ブランチに切り替える  
-   git checkout -d 〇〇（新規ブランチを命名する） 
+5. 新規ブランチを作成し、新規ブランチに移動する  
+   git checkout -b 〇〇（新規ブランチを命名する） 
    
 6. エディタに移動し、ファイルに変更を追記。  
    ファイル内容を変更しpushできるような状態にする
