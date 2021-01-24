@@ -1,3 +1,11 @@
+
+### URLパラメーターについて
+URLパラメータは$_GET or $_REQUESTにIDが指定されていることになる。  
+ここでは"index.php?like"のlikeを指す。  
+```
+<p><a href="index.php?like=<?php echo h($post['id']); ?>&page=<?php echo h($page); ?>"><i class="far fa-heart"></i></a></p>  
+```
+  
 ### クォーテーションについて
 シングル　→　変数を展開  
 ダブル　　→　変数は展開されない
