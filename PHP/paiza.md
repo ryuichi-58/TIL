@@ -22,3 +22,45 @@ foreach ($tmp as $value) {
 // 出力
 var_dump($inputs);
 ```
+### 一番小さい値
+標準入力　横一の場合  
+```
+while ($line = trim(fgets(STDIN))) {
+$tmp[] = $line;
+}
+$array = $tmp;
+echo min($array);
+```
+### 文字の一致
+標準入力　縦一  
+```
+while ($stdin = trim(fgets(STDIN))) {
+    $stdin_array[] = $stdin;
+}
+    
+$array = $stdin_array;
+if($array[0] === $array[1]) {
+    echo 'OK';
+} else {
+    echo 'NG';
+}
+```  
+### Fizz Buzz
+```
+$input = fgets(STDIN);
+
+for($i=1; $i <= $input; $i++) {
+    
+  if($i % 15 === 0):
+      echo 'Fizz Buzz';
+  elseif($i % 3 === 0):
+      echo 'Fizz';
+  elseif($i % 5 === 0):
+      echo 'Buzz';
+  else:
+      echo $i;
+  endif;
+  
+  echo PHP_EOL;
+}
+```
