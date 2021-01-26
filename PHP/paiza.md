@@ -1,5 +1,5 @@
 ### 単一行に複数値がある場合
-```
+```php
 // 入力の取り出し
 $input = trim(fgets(STDIN));  
 
@@ -8,7 +8,7 @@ $inputs = explode(' ', $input);　
 ```
 
 ### 複数行の場合
-```
+```php
 // 標準入力を一行ずつ配列に代入
 while ($line = trim(fgets(STDIN))) {
     $tmp[] = $line;
@@ -23,7 +23,7 @@ foreach ($tmp as $value) {
 var_dump($inputs);
 ```
 ### 入力値が横一行かつそれぞれの値を分割させたい場合
-```
+```php
 // 例:98 75 -> 9 8 7 5に分割したい
 $stdin = trim(fgets(STDIN));
 $stdin_array = explode(' ', $stdin);
@@ -51,7 +51,7 @@ $second_num_array = str_split($stdin_array[1]);
 #課題
 ### 一番小さい値
 標準入力　横一の場合  
-```
+```php
 while ($line = trim(fgets(STDIN))) {
 $tmp[] = $line;
 }
@@ -60,7 +60,7 @@ echo min($array);
 ```
 ### 文字の一致
 標準入力　縦一  
-```
+```php
 while ($stdin = trim(fgets(STDIN))) {
     $stdin_array[] = $stdin;
 }
@@ -73,7 +73,7 @@ if($array[0] === $array[1]) {
 }
 ```  
 ### Fizz Buzz
-```
+```php
 $input = fgets(STDIN);
 
 for($i=1; $i <= $input; $i++) {
