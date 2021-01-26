@@ -1,3 +1,4 @@
+# テンプレート
 ### 単一行に複数値がある場合
 ```php
 // 入力の取り出し
@@ -48,7 +49,7 @@ $stdin_array = explode(' ', trim(fgets(STDIN)));
 $first_num_array = str_split($stdin_array[0]);
 $second_num_array = str_split($stdin_array[1]);
 ```
-#課題
+# 課題
 ### 一番小さい値
 標準入力　横一の場合  
 ```php
