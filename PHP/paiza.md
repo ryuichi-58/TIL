@@ -22,6 +22,33 @@ foreach ($tmp as $value) {
 // 出力
 var_dump($inputs);
 ```
+### 入力値が横一行かつそれぞれの値を分割させたい場合
+```
+// 例:98 75 -> 9 8 7 5に分割したい
+$stdin = trim(fgets(STDIN));
+$stdin_array = explode(' ', $stdin);
+// $stdin_array = [98, 75];
+//それぞれの値を変数 a,bに代入。
+
+$first_num = $stdin_array[0];
+// 98
+
+$second_num = $stdin_array[1];
+// 75
+// それぞれの値を分割して、配列として代入する
+// $first_numを分割 -> $first_num_array=[9,8]
+
+$first_num_array = str_split($first_num);
+// $second_numを分割 -> second_num_array=[7,5]
+
+$second_num_array = str_split($second_num);
+// only code 
+
+$stdin_array = explode(' ', trim(fgets(STDIN)));
+$first_num_array = str_split($stdin_array[0]);
+$second_num_array = str_split($stdin_array[1]);
+```
+#課題
 ### 一番小さい値
 標準入力　横一の場合  
 ```
