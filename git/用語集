@@ -12,6 +12,10 @@ $ git branch -m <old_branch> <new_branch>
 
 ワーキングディレクトリはそのままでステージとコミットをリセット
 git reset <commit>
+ワーキングディレクトリもステージもそのままでコミットだけリセット
+$ git reset --soft <commit>
+ワーキングディレクトリ, ステージ, コミットの全てをリセット
+$ git reset --hard <commit>
 
 
 ```
