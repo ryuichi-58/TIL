@@ -21,11 +21,11 @@ man cat    catのオンラインマニュアルが見られる。
 man -k cat catに関する情報を網羅してくれる。  
   
 ### ショートカットキー
-・Ctrl　＋　f：1文字前へ  
-・Ctrl　＋　b：1文字後ろへ  
-・Ctrl　＋　alt　＋　f：1単語前へ  
-・Ctrl　＋　alt　＋　b：1単語後ろへ  
-・Ctrl　＋　a：行頭へ  
-・Ctrl　＋　e：行末へ  
-・Ctrl　＋　d：右1文字削除  
-・Ctrl　＋　h：左1文字削除  
+・Ctrl＋f     ：1文字前へ  
+・Ctrl＋b     ：1文字後ろへ  
+・Ctrl＋alt＋f：1単語前へ  
+・Ctrl＋alt＋b：1単語後ろへ  
+・Ctrl＋a     ：行頭へ  
+・Ctrl＋e     ：行末へ  
+・Ctrl＋d     ：右1文字削除  
+・Ctrl＋h     ：左1文字削除  
